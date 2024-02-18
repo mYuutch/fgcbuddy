@@ -164,7 +164,7 @@ return "/events/" + event.id
     </AppLayout>
 
     
-    <div class="container mx-auto" v-if="Object.keys(reviews).length > 0">
+    <div class="container mx-auto" v-if="isEventOver(fullEvent) && Object.keys(reviews).length > 0">
 
       <div class="flex justify-between mb-10 mt-24"><h2 class="text-2xl"> Reviews </h2> <h2 class="text-2xl">Moyenne des reviews : {{ meanOfRatings/2*2 }}</h2></div>
     <div  v-for="review in reviews.data">
