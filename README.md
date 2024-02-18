@@ -28,6 +28,7 @@
 ## Reviews '/events/{id}'
   - Laisser une review sur des events terminés uniquement  ☑️
   - Affichage des reviews sur évenements terminés uniquement ☑️
+  - Moyenne des reviews ☑️
   - Validation d'event terminé et de nb de review unique ☑️ (fonctions dans le model Event)
   - Pagination des reviews ☑️
   - Modération en back-office ☑️
