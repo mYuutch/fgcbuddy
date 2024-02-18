@@ -35,11 +35,32 @@
 
 ## Screenshots
 
-![image](https://github.com/mYuutch/my-events/assets/113178225/314b51fe-78fc-4f89-812b-b05d793df363)
-![image](https://github.com/mYuutch/my-events/assets/113178225/0b43cbc1-3410-4b03-bbd5-fef989bc6f34)
-![image](https://github.com/mYuutch/my-events/assets/113178225/43be39be-84ba-4729-8cc6-222d842f1418)
-![image](https://github.com/mYuutch/my-events/assets/113178225/10b46573-cc2b-4065-8052-0e1baf806a33)
-![image](https://github.com/mYuutch/my-events/assets/113178225/314d9d1a-cfa0-487f-bea2-17fe69b1f919)
+### Index 
+![image](https://github.com/mYuutch/my-events/assets/113178225/c1de27bd-5e20-44d1-bdf3-7e31655b13bd)
+
+### Events
+![image](https://github.com/mYuutch/my-events/assets/113178225/d7da0890-15fb-49b7-9d71-d27a2715c054)
+
+### Event terminé 
+![image](https://github.com/mYuutch/my-events/assets/113178225/cf870bc0-ee3a-4f0d-bd9d-9f5ef45a5c1d)
+
+### Event en cours ou pas encore commencé
+![image](https://github.com/mYuutch/my-events/assets/113178225/76694d60-f3b9-4ab1-b3c4-26eb9524c436)
+
+### Categories 
+![image](https://github.com/mYuutch/my-events/assets/113178225/0d056e8e-6efb-46ed-b638-a7100f03dde9)
+
+### Events par categorie
+![image](https://github.com/mYuutch/my-events/assets/113178225/52c07613-6810-427d-93fb-ba0a74dbfa3c)
+
+
+### Back-office event 
+![image](https://github.com/mYuutch/my-events/assets/113178225/17812b4c-a381-4743-8121-1f7ea79b6cb8)
+
+
+
+
+
 
 
 
