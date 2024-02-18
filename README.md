@@ -45,7 +45,8 @@
 ![image](https://github.com/mYuutch/my-events/assets/113178225/cf870bc0-ee3a-4f0d-bd9d-9f5ef45a5c1d)
 
 ### Event en cours ou pas encore commencé
-![image](https://github.com/mYuutch/my-events/assets/113178225/76694d60-f3b9-4ab1-b3c4-26eb9524c436)
+![image](https://github.com/mYuutch/my-events/assets/113178225/c6c2e6e6-3efc-4508-b45e-ad0b51d1cfde)
+
 
 ### Categories 
 ![image](https://github.com/mYuutch/my-events/assets/113178225/0d056e8e-6efb-46ed-b638-a7100f03dde9)
