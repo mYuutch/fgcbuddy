@@ -14,14 +14,14 @@ class ShowEventController extends Controller
     public function __invoke(Request $request, $id)
     {
 
-        $similarEvents = Event::similar($id, 5);
-        $closeEvents = Event::close($id, 5);
+        $similarEvents = Event::similar($id, 4);
+        $closeEvents = Event::close($id, 4);
         
         
 
         $event = Event::findOrFail($id);
 
-        $reviews = $event->reviews()->paginate(1);
+        $reviews = $event->reviews()->paginate(5);
 
         $meanOfRatings = $event->reviews()->avg('rating');
         $userId = $request->user()->id;

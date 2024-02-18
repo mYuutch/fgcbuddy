@@ -19,9 +19,10 @@ class EventFactory extends Factory
         return [
             'title' => $this->faker->sentence,
             'description' => $this->faker->paragraph,
-            'start_date' => $this->faker->dateTime,
-            'end_date' => $this->faker->dateTime,
-            'location' => $this->faker->address,
+            'category_id' => $this->faker->numberBetween(1, 10),
+            'start_date' => $this->faker->dateTimeBetween('-1 month', '+1 month'),
+            'end_date' => $this->faker->dateTimeBetween('-1 month', '+1 month'),
+            'location' => $this->faker->country,
             'capacity' => $this->faker->numberBetween(50, 200),
             'price' => $this->faker->numberBetween(0, 1000)
         ];

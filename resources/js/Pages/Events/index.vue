@@ -3,6 +3,7 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 import { Link } from '@inertiajs/vue3';
 import { ref } from 'vue';
 import { router } from '@inertiajs/vue3';
+import Pagination from '@/Components/Pagination.vue';
 
 
 defineProps ({
@@ -48,7 +49,7 @@ return "/events/" + event.id
 
     <div   class="container mx-auto my-12 grid grid-cols-1 p-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
     
-    <article v-for="event in events"  class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg cols-1">
+    <article v-for="event in events.data"  class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg cols-1">
 <Link :key="event.id" :href="getLink(event)">
   
   <img
@@ -72,7 +73,8 @@ return "/events/" + event.id
 </Link>
 </article>
 
-</div>
 
+</div>
+<Pagination class=" flex items-center  justify-center mb-12 mx-auto" :links="events.links"/>
     </AppLayout>
 </template>

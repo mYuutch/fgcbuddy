@@ -163,12 +163,13 @@ return "/events/" + event.id
 
     </AppLayout>
 
-    <h2>Moyenne des reviews : {{ meanOfRatings/2*2 }}</h2>
+    
     <div class="container mx-auto" v-if="Object.keys(reviews).length > 0">
-      <h2> Reviews </h2>
+
+      <div class="flex justify-between mb-10 mt-24"><h2 class="text-2xl"> Reviews </h2> <h2 class="text-2xl">Moyenne des reviews : {{ meanOfRatings/2*2 }}</h2></div>
     <div  v-for="review in reviews.data">
 
-      <div class="flex gap-5 p-10 bg-slate-300">
+      <div class="flex gap-5 p-10 bg-slate-300 mb-5">
         <div>{{ review.review }}</div>
         <div>{{ review.rating }}/5</div>
         {{ console.log(review) }}
