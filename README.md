@@ -13,7 +13,7 @@
   - Lien dans Détail event pour accéder à la cat ☑️
   - Gestion en back-office
 
-## Détail d'un event ☑️ '/event/{id}'
+## Détail d'un event ☑️ '/events/{id}'
  - Possibilité de s'inscrire / se désinscrire ☑️
  - Visualisation des participants en back-office ☑️
  - Events proches / Similaires ☑️ (scopes)
@@ -25,7 +25,7 @@
  - Email de rappel 〰️
    - Mise en place du scheduler, job est dispatché, s'execute, mais n'envoie pas de mail
 
-## Reviews '/event/{id}'
+## Reviews '/events/{id}'
   - Laisser une review sur des events terminés uniquement  ☑️
   - Affichage des reviews sur évenements terminés uniquement ☑️
   - Validation d'event terminé et de nb de review unique ☑️ (fonctions dans le model Event)
