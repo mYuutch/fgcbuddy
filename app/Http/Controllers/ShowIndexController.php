@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Illuminate\Foundation\Application;
 use App\Models\Event;
+use App\Models\Category;
 
 class ShowIndexController extends Controller
 {
@@ -16,13 +17,13 @@ class ShowIndexController extends Controller
     public function __invoke(Request $request)
     {
 
-    $upcomingEvents = Event::upcoming(2);
-                    
-                
-   
-      $popularEvents = Event::popular(2);
 
-    
+    $upcomingEvents = Event::upcoming(5);
+      $popularEvents = Event::popular(5);
+
+      $popularCategories = Category::popular(5);
+
+ 
 
      return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
@@ -30,6 +31,7 @@ class ShowIndexController extends Controller
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
         'upcomingEvents' => $upcomingEvents,
-        'popularEvents' => $popularEvents
+        'popularEvents' => $popularEvents,
+        'popularCategories' => $popularCategories,
      ]);
 }};

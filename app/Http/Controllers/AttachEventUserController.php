@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\User;
 use Inertia\Inertia;
+use App\Jobs\ConfirmParticipationMail;
 
 class AttachEventUserController extends Controller
 {
@@ -22,6 +23,8 @@ class AttachEventUserController extends Controller
 
         $user->events()->attach($event->id);
 
+        ConfirmParticipationMail::dispatch($user);
+        
 
         return redirect()->route('event.[id]', ['id' => $event->id]);
     }

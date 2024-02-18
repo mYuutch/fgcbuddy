@@ -11,6 +11,9 @@ use App\Http\Controllers\ShowIndexController;
 use App\Http\Controllers\ShowSubscribedEventsController;
 use App\Http\Controllers\AttachEventUserController;
 use App\Http\Controllers\DetachEventUserController;
+use App\Http\Controllers\EventSearchController;
+use App\Http\Controllers\CreateReviewController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +30,9 @@ Route::get('/events', ShowEventsController::class)->name('events.index'); // Sho
 Route::get('/categories', ShowCategoriesController::class)->name('categories.index'); // Show all categories
 Route::get('/events/{id}', ShowEventController::class)->name('event.[id]');// Show event details 
 Route::get('/categories/{id}', ShowCategoryController::class)->name('categories.[id]'); // Show all events related to a certain cat
+Route::post('/events/search', EventSearchController::class)->name('events.search');
+
+Route::post('/events/{eventId}/review', CreateReviewController::class)->name('events.review');
 
 
 

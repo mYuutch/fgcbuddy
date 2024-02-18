@@ -13,6 +13,23 @@ class Category extends Model
         return $this->hasMany(Event::class);
     }
 
+
+
+    //Event avec le plus grand nombre d'users
+    //------------------------------------------
+    public function scopePopular($query, $limit)
+    {
+        return $query
+            ->withCount('events')
+            ->orderBy('events_count', 'desc')
+            ->take($limit)
+            ->get();
+    }
+
+    //-------------------------------------------
+
+    
+
     protected $fillable = [
         'name'
     ];

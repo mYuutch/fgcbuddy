@@ -9,6 +9,7 @@
         phpVersion: String,
         upcomingEvents: Array,
         popularEvents: Array,
+        popularCategories: Array,
     });
     </script>
 
@@ -42,6 +43,7 @@
                                     <th className="px-4 py-2 w-20">Id</th>
                                     <th className="px-4 py-2">Title</th>
                                     <th className="px-4 py-2">Description</th>
+                                    <th className="px-4 py-2">Start date</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -49,11 +51,12 @@
                                     <td className="border px-4 py-2">{{ event.id }}</td>
                                     <td className="border px-4 py-2">{{ event.title }}</td>
                                     <td className="border px-4 py-2">{{ event.description }}</td>
+                                    <td className="border px-4 py-2">{{ event.start_date }}</td>
                                 </tr>
                             </tbody>
                         </table>
 
-                       <!-- <Pagination class="mt-6" :links="events.links" />-->
+                        
                     </div>
                 </div>
             </div>
@@ -71,6 +74,7 @@
                                     <th className="px-4 py-2 w-20">Id</th>
                                     <th className="px-4 py-2">Title</th>
                                     <th className="px-4 py-2">Description</th>
+                                    <th className="px-4 py-2">Nb participants</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -78,6 +82,38 @@
                                     <td className="border px-4 py-2">{{ event.id }}</td>
                                     <td className="border px-4 py-2">{{ event.title }}</td>
                                     <td className="border px-4 py-2">{{ event.description }}</td>
+                                    <td className="border px-4 py-2">{{ event.users_count }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                       <!-- <Pagination class="mt-6" :links="events.links" />-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="py-12">
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                    <div class="p-6 bg-white border-b border-gray-200">
+                            <span>Cat populaires (nb events)</span>
+                        <table className="table-fixed w-full">
+                            <thead>
+                                <tr className="bg-gray-100">
+                                    <th className="px-4 py-2 w-20">Id</th>
+                                    <th className="px-4 py-2">Title</th>
+                                    <th className="px-4 py-2">Nombre d'events</th>
+                               
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="event in popularCategories">
+                                    <td className="border px-4 py-2">{{ event.id }}</td>
+                                    <td className="border px-4 py-2">{{ event.name }}</td>
+                                    <td className="border px-4 py-2">{{ event.events_count }}</td>
                                 </tr>
                             </tbody>
                         </table>

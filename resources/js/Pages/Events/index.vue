@@ -1,10 +1,25 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { Link } from '@inertiajs/vue3';
+import { ref } from 'vue';
+import { router } from '@inertiajs/vue3';
+
 
 defineProps ({
     events: Array
 })
+
+
+
+const form = ref({
+  date: null,
+  location: null,
+})
+
+function submit() {
+  console.log(form.value);
+  router.post(route('events.search'), form.value);
+}
 
 
 function getLink(event){
@@ -22,6 +37,15 @@ return "/events/" + event.id
         </template>
 
     
+    <form @submit.prevent="submit">
+    <label for="date">Date:</label>
+    <input type="date" id="date" v-model="form.date"  />
+    <label for="location">Location:</label>
+    <input type="text" id="location" v-model="form.location" />
+    <button type="submit">Search</button>
+  </form>
+
+
     <div   class="container mx-auto my-12 grid grid-cols-1 p-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
     
     <article v-for="event in events"  class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg cols-1">

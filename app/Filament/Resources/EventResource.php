@@ -106,6 +106,7 @@ class EventResource extends Resource
         return [
             
                 RelationManagers\UsersRelationManager::class,
+                RelationManagers\ReviewsRelationManager::class,
             ];
     
     }
