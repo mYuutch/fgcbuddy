@@ -1,7 +1,6 @@
 # Projet de gestion d'events en Laravel
 
-## Events Populaires, Cat Populaires et Upcoming Events ☑️
-Fait à l'aide de scopes dans le modèle Event
+## Events Populaires, Cat Populaires et Upcoming Events ☑️ (scopes)
 
 ## Afficher tous les events ☑️
   - Filtre par date/ville ☑️
