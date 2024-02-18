@@ -11,7 +11,7 @@
   - Affichage des categories ☑️
   - Afficher events d'une certaine cat ☑️
   - Lien dans Détail event pour accéder à la cat ☑️
-  - Gestion en back-office
+  - Gestion en back-office ☑️
 
 ## Détail d'un event ☑️ '/events/{id}'
  - Possibilité de s'inscrire / se désinscrire ☑️
